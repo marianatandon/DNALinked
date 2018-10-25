@@ -101,7 +101,7 @@ public class LinkStrand implements IDnaStrand {
 			int gap = index;
 			myLocalIndex=0;
 			myCurrent = myFirst;
-			while (myCurrent.info.length() < gap ) {
+			while (myCurrent.info.length() <= gap ) {
 				myCurrent = myCurrent.next;
 				gap = gap - myCurrent.info.length();
 			}
