@@ -122,8 +122,6 @@ public class LinkStrand implements IDnaStrand {
 			if (exCurrent == myCurrent) {
 				myLocalIndex = myLocalIndex + gap;
 				myIndex = index;
-				System.out.println(myLocalIndex);
-				System.out.println(myCurrent.info);
 				return myCurrent.info.charAt(myLocalIndex);
 			}
 			myLocalIndex =gap;
